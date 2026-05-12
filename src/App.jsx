@@ -3,9 +3,13 @@ import React, { Suspense } from "react";
 import Loading from "./components/Loading";
 
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
-const Dashboard = React.lazy(() => import("./pages/Dashboard"));
-const Orders = React.lazy(() => import("./pages/InputSampah"));
-const Customers = React.lazy(() => import("./pages/Riwayat"));
+const Beranda = React.lazy(() => import("./pages/Dashboard"));
+const InputSampah = React.lazy(() => import("./pages/InputSampah"));
+const Riwayat = React.lazy(() => import("./pages/Riwayat"));
+const Poin = React.lazy(() => import("./pages/Poin"));
+const Leaderboard = React.lazy(() => import("./pages/Leaderboard"));
+const Reward = React.lazy(() => import("./pages/Reward"));
+const Edukasi = React.lazy(() => import("./pages/Edukasi"));
 import NotFound from "./pages/NotFound";
 
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"));
@@ -19,9 +23,13 @@ function App() {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Beranda />} />
           <Route path="/inputSampah" element={<InputSampah />} />
-          <Route path="/riwayat" element={<Riwayat />} />
+          <Route path="/Riwayat" element={<Riwayat />} />
+          <Route path="/Poin" element={<Poin />} />
+          <Route path="/Leaderboard" element={<Leaderboard />} />
+          <Route path="/Reward" element={<Reward />} />
+          <Route path="/Edukasi" element={<Edukasi />} />
           <Route path="*" element={<NotFound />} />
         </Route>
 
