@@ -30,7 +30,6 @@ function App() {
           <Route path="/Leaderboard" element={<Leaderboard />} />
           <Route path="/Reward" element={<Reward />} />
           <Route path="/Edukasi" element={<Edukasi />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
 
         <Route element={<AuthLayout />}>
@@ -38,6 +37,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot" element={<Forgot />} />
         </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   );
