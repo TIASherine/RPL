@@ -8,16 +8,6 @@ export default function Dashboard() {
         <div>
           <h1 className="text-4xl font-bold text-black">Dashboard Saya</h1>
         </div>
-
-        <div className="flex items-center gap-3">
-          <div className="text-right">
-            <h2 className="font-semibold text-lg text-black">Hello, Manda</h2>
-
-            <p className="text-gray-500">Warga</p>
-          </div>
-
-          <div className="w-12 h-12 rounded-full bg-gray-300"></div>
-        </div>
       </div>
 
       {/* Top Cards */}

@@ -5,12 +5,11 @@ export default function ErrorPage({ code, desc }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
         flexDirection: "column",
         textAlign: "center",
       }}
     >
-      <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="flex items-center justify-center p-6">
         <div className="bg-white w-full max-w-4xl rounded-3xl p-10 text-center shadow-lg">
           <img src="/img/error.jpg" className="w-100" />
 
