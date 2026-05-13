@@ -1,4 +1,12 @@
-import { FaHome, FaTrash, FaHistory, FaMedal  } from "react-icons/fa";
+import {
+  FaHome,
+  FaTrash,
+  FaHistory,
+  FaMedal,
+  FaGift,
+  FaGraduationCap,
+} from "react-icons/fa";
+import { FaRankingStar } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar() {
@@ -6,14 +14,14 @@ export default function Sidebar() {
     `flex cursor-pointer items-center rounded-xl p-4  space-x-2
         ${
           isActive
-            ? "text-hijau bg-white font-extrabold"
-            : "text-gray-600 hover:text-hijau hover:bg-white hover:font-extrabold"
+            ? "text-[var(--color-hijau)] bg-white text-[var(--color-hijau)] font-extrabold"
+            : "text-white hover:text-black hover:bg-white hover:font-extrabold"
         }`;
 
   return (
     <div
       id="sidebar"
-      className="flex h-screen w-90 flex-col bg--color-sidebar p-10 shadow-lg"
+      className="flex h-screen w-90 flex-col bg-[var(--color-sidebar)] p-10 shadow-lg"
     >
       {/* Logo */}
       <div id="sidebar-logo" className="flex flex-col">
@@ -21,7 +29,11 @@ export default function Sidebar() {
           id="logo-title"
           className="font-poppins font-extrabold text-[48px] text-gray-900"
         >
-          <img src="/img/logo.png" className="w-50" />
+          <img src="/img/logo.png" className="w-20" />
+        </span>
+
+        <span id="logo-subtitle" className="font-semibold text-white">
+          Sistem Manajemen <br /> Pengelolaan Sampah
         </span>
       </div>
 
@@ -31,14 +43,14 @@ export default function Sidebar() {
           <li>
             <NavLink id="menu-1" to="/" className={menuClass}>
               <FaHome className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center"> Beranda </span>
+              <span className="text-white flex items-center"> Beranda </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink id="menu-2" to="/inputSampah" className={menuClass}>
               <FaTrash className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center">
+              <span className="text-white flex items-center">
                 {" "}
                 Input Sampah{" "}
               </span>
@@ -48,24 +60,21 @@ export default function Sidebar() {
           <li>
             <NavLink id="menu-3" to="/riwayat" className={menuClass}>
               <FaHistory className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center"> Riwayat </span>
+              <span className="text-white flex items-center"> Riwayat </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink id="menu-4" to="/poin" className={menuClass}>
               <FaMedal className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center">
-                {" "}
-                Poin Saya{" "}
-              </span>
+              <span className="text-white flex items-center"> Poin Saya </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink id="menu-5" to="/leaderboard" className={menuClass}>
-              <FaMedal className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center">
+              <FaRankingStar className="mr-4 text-xl" />
+              <span className="text-white flex items-center">
                 {" "}
                 Leaderboard{" "}
               </span>
@@ -74,15 +83,15 @@ export default function Sidebar() {
 
           <li>
             <NavLink id="menu-6" to="/reward" className={menuClass}>
-              <FaMedal className="mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center"> Reward </span>
+              <FaGift className="mr-4 text-xl" />
+              <span className="text-white flex items-center"> Reward </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink id="menu-6" to="/edukasi" className={menuClass}>
-              <FaMedal className= "mr-4 text-xl" />
-              <span className="text-gray-600 flex items-center"> Edukasi </span>
+              <FaGraduationCap className="mr-4 text-xl" />
+              <span className="text-white  flex items-center"> Edukasi </span>
             </NavLink>
           </li>
         </ul>
