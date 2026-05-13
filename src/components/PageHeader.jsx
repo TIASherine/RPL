@@ -14,13 +14,13 @@ export default function PageHeader({ title, breadcrumb, children, onClick }) {
           className="flex items-center font-medium space-x-2 mt-2"
         >
           <span id="breadcrumb-home" className="text-gray-500">
-            {breadcrumb}
+            Beranda
           </span>
           <span id="breadcrumb-separator" className="text-gray-500">
             /
           </span>
           <span id="breadcrumb-current" className="text-gray-500">
-            Order List
+            {breadcrumb}
           </span>
         </div>
       </div>
