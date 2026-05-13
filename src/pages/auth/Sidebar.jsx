@@ -13,10 +13,11 @@ import { Link, NavLink } from "react-router-dom";
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
     `flex cursor-pointer items-center rounded-xl p-4  space-x-2
-        ${isActive
-      ? "text-[var(--color-hijau)] bg-white text-black font-extrabold"
-      : "text-white hover:text-[var(--color-hijau)] hover:bg-white hover:font-extrabold"
-    }`;
+        ${
+          isActive
+            ? "text-[var(--color-hijau)] bg-white text-black font-extrabold"
+            : "text-white hover:text-[var(--color-hijau)] hover:bg-white hover:font-extrabold"
+        }`;
 
   return (
     <div
@@ -94,9 +95,7 @@ export default function Sidebar() {
       >
         <FaGear className="text-2xl text-white" />
 
-        <Link id="exit" to="/login">
-          <IoExitSharp className="text-2xl text-white" />
-        </Link>
+        <IoExitSharp className="text-2xl text-white" />
       </div>
     </div>
   );
