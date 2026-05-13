@@ -3,6 +3,13 @@ import { FaStar, FaTrash, FaHistory } from "react-icons/fa";
 export default function Dashboard() {
   return (
     <div className="p-6 bg-[#f3f3f3] min-h-screen">
+      {/* Header */}
+      <div className="flex justify-between items-center mb-8">
+        <div>
+          <h1 className="text-4xl font-bold text-black">Dashboard Saya</h1>
+        </div>
+      </div>
+
       {/* Top Cards */}
       <div className="grid grid-cols-3 gap-5">
         {/* Card 1 */}
