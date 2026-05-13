@@ -64,7 +64,7 @@ export default function Sidebar() {
 
           <li>
             <NavLink id="menu-5" to="/leaderboard" className={menuClass}>
-              <MdAccessTime className="mr-4 text-xl" />
+              <FaMedal className="mr-4 text-xl" />
               <span className="text-gray-600 flex items-center">
                 {" "}
                 Leaderboard{" "}
@@ -74,14 +74,14 @@ export default function Sidebar() {
 
           <li>
             <NavLink id="menu-6" to="/reward" className={menuClass}>
-              <MdShoppingCart className="mr-4 text-xl" />
+              <FaMedal className="mr-4 text-xl" />
               <span className="text-gray-600 flex items-center"> Reward </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink id="menu-6" to="/edukasi" className={menuClass}>
-              <MdShoppingCart className="mr-4 text-xl" />
+              <FaMedal className= "mr-4 text-xl" />
               <span className="text-gray-600 flex items-center"> Edukasi </span>
             </NavLink>
           </li>

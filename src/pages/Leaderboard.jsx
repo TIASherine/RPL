@@ -14,7 +14,7 @@ export default function Leaderboard() {
       </PageHeader>
 
       <div>
-        <ErrorPage code="404" desc="Tidak Tersedia" />
+        <ErrorPage code="404" desc="Manda imut" />
       </div>
     </div>
   );
