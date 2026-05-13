@@ -1,5 +1,4 @@
 import PageHeader from "../components/PageHeader";
-import orders from "../data/orders.json";
 import { useState } from "react";
 
 export default function InputSampah() {
@@ -30,9 +29,7 @@ export default function InputSampah() {
 
               <p className="text-sm text-gray-600">{order.customerName}</p>
 
-              <p className="text-xs text-gray-400 mt-1">
-                {order.orderDate}
-              </p>
+              <p className="text-xs text-gray-400 mt-1">{order.orderDate}</p>
 
               <p className="mt-2 font-semibold text-gray-800">
                 Rp {order.totalPrice.toLocaleString("id-ID")}
@@ -43,8 +40,8 @@ export default function InputSampah() {
                   order.status === "Completed"
                     ? "bg-green-100 text-green-600"
                     : order.status === "Pending"
-                    ? "bg-yellow-100 text-yellow-600"
-                    : "bg-red-100 text-red-600"
+                      ? "bg-yellow-100 text-yellow-600"
+                      : "bg-red-100 text-red-600"
                 }`}
               >
                 {order.status}

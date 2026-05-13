@@ -1,5 +1,4 @@
 import PageHeader from "../components/PageHeader";
-import customers from "../data/customers.json";
 import { useState } from "react";
 
 export default function Riwayat() {

@@ -18,7 +18,7 @@ export default function Dashboard() {
 
       <div
         id="dashboard-grid"
-        className="flex flex-auto gap-6 text-lg font-bold"
+        className="flex flex-auto gap-6 text-lg font-bold w-45"
       >
         <div
           id="dashboard-orders"
