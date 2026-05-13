@@ -28,7 +28,7 @@ export default function PageHeader({ title, breadcrumb, children, onClick }) {
       <div>
         <button
           onClick={onClick}
-          className="bg-hijau text-white px-4 py-2 rounded-lg"
+          className="bg-hijau text-green-700 px-4 py-2 rounded-lg"
         >
           {children}
         </button>
