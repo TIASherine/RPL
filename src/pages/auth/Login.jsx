@@ -1,9 +1,12 @@
 
 import { BsFillExclamationDiamondFill } from "react-icons/bs";
+import { GoPerson } from "react-icons/go";
+import { RiLockPasswordLine } from "react-icons/ri";
 import { ImSpinner2 } from "react-icons/im";
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
+
 import axios from "axios";
 
 export default function Login() {
@@ -31,7 +34,7 @@ export default function Login() {
 
     axios
       .post("https://dummyjson.com/user/login", {
-        username: dataForm.email,
+        username: dataForm.username,
         password: dataForm.password,
       })
       .then((response) => {
@@ -85,13 +88,15 @@ export default function Login() {
       {/* Kanan */}
       <div className="flex items-center justify-center bg-white px-6">
         <div className="w-full max-w-md">
-          <div id="sidebar-logo" className="flex flex-col">
-            <span
-              id="logo-title"
-              className="font-poppins font-extrabold text-[48px] text-gray-900"
-            >
-              <img src="../img/logo.png" className="w-35" />
+          {/* Logo */}
+          <div id="sidebar-logo" className="w-full flex items-center justify-center  mb-6">
+
+            <img src="/img/logo.png" className="w-35 mb-2" />
+
+            <span className="text-base font-semibold text-gray-700 text-center leading-relaxed">
+              Sistem Daur Ulang Sampah Perumahan
             </span>
+
           </div>
 
           <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
@@ -103,41 +108,51 @@ export default function Login() {
           {loadingInfo}
 
           <form onSubmit={handleSubmit}>
-            <div className="mb-5">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Email Address
-              </label>
+
+            {/* Username */}
+            <div className="mb-5 relative">
+              <GoPerson className="absolute left-4 top-1/2 -translate-y-1/2 text-2xl text-gray-500" />
 
               <input
                 type="text"
-                id="email"
-                className="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm
-                              placeholder-gray-400"
-                placeholder="you@example.com"
-                name="email"
+                id="username"
+                className="w-full pl-14 pr-4 py-4 bg-gray-50 border border-gray-400 rounded-2xl shadow-md placeholder-gray-500"
+                placeholder="Username"
+                name="username"
                 onChange={handleChange}
               />
             </div>
 
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Password
-              </label>
+            {/* Password */}
+            <div className="mb-3 relative">
+              <RiLockPasswordLine className="absolute left-4 top-1/2 -translate-y-1/2 text-2xl text-gray-500" />
+
               <input
                 type="password"
                 id="password"
-                className="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm
-                              placeholder-gray-400"
-                placeholder="********"
+                className="w-full pl-14 pr-4 py-4 bg-gray-50 border border-gray-400 rounded-2xl shadow-md placeholder-gray-500"
+                placeholder="Password"
                 name="password"
                 onChange={handleChange}
               />
             </div>
 
+            {/* Remember & Forgot */}
+            <div className="flex items-center justify-between mb-6">
+
+              <label className="flex items-center gap-2 text-gray-600 text-sm">
+                <input type="checkbox" />
+                Ingat saya
+              </label>
+
+                <Link id="exit" to="*" className="text-green-600 font-semibold text-sm hover:underline">
+                  Lupa Password?
+                </Link>
+            </div>
+
             <button
               type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4
-                          rounded-lg transition duration-300"
+              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-2xl transition duration-300"
             >
               Login
             </button>
