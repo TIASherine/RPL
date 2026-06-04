@@ -21,17 +21,17 @@ export default function InputSampah() {
           {/* FORM CARD */}
           <div className="bg-[#e8ebe6] border border-gray-400 rounded-[20px] p-6 w-full lg:w-[420px]">
 
-            <h2 className="text-[34px] font-medium underline mb-6">
+            <h2 className="text-[24px] font-medium underline mb-6 text-center">
               Input Sampah Baru
             </h2>
 
             {/* Jenis Sampah */}
             <div className="mb-5">
-              <label className="block text-[22px] mb-2">
+              <label className="block text-[20px] mb-2">
                 Jenis Sampah
               </label>
 
-              <select className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[16px] outline-none bg-white">
+              <select className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[15px] outline-none bg-white">
                 <option>Pilih Jenis Sampah</option>
                 <option>Organik</option>
                 <option>Anorganik</option>
@@ -42,43 +42,43 @@ export default function InputSampah() {
 
             {/* Berat */}
             <div className="mb-5">
-              <label className="block text-[22px] mb-2">
+              <label className="block text-[20px] mb-2">
                 Berat (KG)
               </label>
 
               <input
                 type="text"
                 placeholder="Masukkan Berat"
-                className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[16px] outline-none bg-white"
+                className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[15px] outline-none bg-white"
               />
             </div>
 
             {/* Tanggal */}
             <div className="mb-5">
-              <label className="block text-[22px] mb-2">
+              <label className="block text-[20px] mb-2">
                 Tanggal
               </label>
 
               <input
                 type="date"
-                className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[16px] outline-none bg-white"
+                className="w-full h-[55px] rounded-[15px] border border-gray-400 px-4 text-[16px] outline-none bg-white"
               />
             </div>
 
             {/* Catatan */}
             <div className="mb-5">
-              <label className="block text-[22px] mb-2">
+              <label className="block text-[20px] mb-2">
                 Catatan (Opsional)
               </label>
 
               <textarea
-                className="w-full h-[100px] rounded-[18px] border border-gray-400 p-4 text-[16px] outline-none bg-white resize-none"
+                className="w-full h-[100px] rounded-[18px] border border-gray-400 p-4 text-[15px] outline-none bg-white resize-none"
                 placeholder="Masukkan Catatan"
               />
             </div>
 
             {/* BUTTON */}
-            <button className="w-full h-[55px] bg-green-700 hover:bg-green-800 transition text-white rounded-xl text-[22px] font-medium">
+            <button className="w-full h-[55px] bg-green-700 hover:bg-green-800 transition text-white rounded-xl text-[20px] font-regular">
               Simpan Data
             </button>
           </div>
@@ -86,7 +86,7 @@ export default function InputSampah() {
           {/* GUIDE CARD */}
           <div className="bg-[#e8ebe6] border border-gray-400 rounded-[20px] p-6 w-full lg:w-[430px]">
 
-            <h2 className="text-[34px] font-medium underline mb-6">
+            <h2 className="text-[24px] font-medium underline mb-6 text-center">
               Panduan Pemilahan
             </h2>
 
