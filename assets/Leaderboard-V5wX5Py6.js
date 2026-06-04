@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-CiJ5HJyU.js";import{t as n}from"./PageHeader-BQ5IEL3q.js";import{t as r}from"./ErrorPage-B9x9W-x5.js";e();var i=t();function a(){return(0,i.jsxs)(`div`,{children:[(0,i.jsx)(n,{breadcrumb:`Leaderboard`}),(0,i.jsx)(`div`,{children:(0,i.jsx)(r,{code:`404`,desc:`Manda imut`})})]})}export{a as default};

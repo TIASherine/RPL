@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CiJ5HJyU.js";import{r as t}from"./index-74JMjZi1.js";var n=e();function r(){return(0,n.jsx)(`div`,{className:`min-h-screen flex items-center justify-center`,children:(0,n.jsx)(`div`,{className:`w-full h-full`,children:(0,n.jsx)(t,{})})})}export{r as default};
