@@ -6,10 +6,7 @@ export default function Reward() {
   return (
     <div>
       <PageHeader
-        title="Reward"
         breadcrumb="Reward"
-        children="Add Reward"
-        onClick={() => setShowContent((prev) => !prev)}
       ></PageHeader>
 
       <div>

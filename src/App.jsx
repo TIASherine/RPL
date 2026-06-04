@@ -6,7 +6,6 @@ const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
 const Beranda = React.lazy(() => import("./pages/Dashboard"));
 const InputSampah = React.lazy(() => import("./pages/InputSampah"));
 const Riwayat = React.lazy(() => import("./pages/Riwayat"));
-const Poin = React.lazy(() => import("./pages/Poin"));
 const Leaderboard = React.lazy(() => import("./pages/Leaderboard"));
 const Reward = React.lazy(() => import("./pages/Reward"));
 const Edukasi = React.lazy(() => import("./pages/Edukasi"));
@@ -26,7 +25,6 @@ function App() {
           <Route path="/" element={<Beranda />} />
           <Route path="/inputSampah" element={<InputSampah />} />
           <Route path="/Riwayat" element={<Riwayat />} />
-          <Route path="/Poin" element={<Poin />} />
           <Route path="/Leaderboard" element={<Leaderboard />} />
           <Route path="/Reward" element={<Reward />} />
           <Route path="/Edukasi" element={<Edukasi />} />

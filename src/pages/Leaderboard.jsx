@@ -6,10 +6,7 @@ export default function Leaderboard() {
   return (
     <div>
       <PageHeader
-        title="Leaderboard"
         breadcrumb="Leaderboard"
-        children="Add Leaderboard"
-        onClick={() => setShowContent((prev) => !prev)}
       >
       </PageHeader>
 

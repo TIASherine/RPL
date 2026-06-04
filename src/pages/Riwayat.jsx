@@ -23,9 +23,7 @@ export default function Riwayat() {
   return (
     <div className="bg-[#f5f5f5] min-h-screen">
       <PageHeader
-        title="Riwayat Saya"
         breadcrumb="Riwayat"
-        children="Add Riwayat"
         onClick={() => setShowContent((prev) => !prev)}
       >
         {showContent ? "Hide Riwayat" : "Add Riwayat"}

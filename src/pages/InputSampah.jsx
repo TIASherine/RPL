@@ -2,34 +2,20 @@ import PageHeader from "../components/PageHeader";
 import { useState } from "react";
 
 export default function InputSampah() {
-  const [showContent, setShowContent] = useState(true);
-
   return (
-    <div className="w-full min-h-screen bg-[#efefef] p-5">
-      <PageHeader
-        title="Input Sampah"
-        breadcrumb="Input Sampah"
-        children="Input Sampah"
-        onClick={() => setShowContent((prev) => !prev)}
-      >
-        {showContent ? "Hide Input Sampah" : "Show Input Sampah"}
-      </PageHeader>
-
-      {showContent && (
+    <div className="flex-1">
+      <PageHeader breadcrumb="Input Sampah"></PageHeader>
+      <div className="w-full min-h-screen p-5">
         <div className="mt-6 flex flex-wrap gap-25 justify-center">
-
           {/* FORM CARD */}
           <div className="bg-[#e8ebe6] border border-gray-400 rounded-[20px] p-6 w-full lg:w-[420px]">
-
             <h2 className="text-[24px] font-medium underline mb-6 text-center">
               Input Sampah Baru
             </h2>
 
             {/* Jenis Sampah */}
             <div className="mb-5">
-              <label className="block text-[20px] mb-2">
-                Jenis Sampah
-              </label>
+              <label className="block text-[20px] mb-2">Jenis Sampah</label>
 
               <select className="w-full h-[55px] rounded-[18px] border border-gray-400 px-4 text-[15px] outline-none bg-white">
                 <option>Pilih Jenis Sampah</option>
@@ -42,9 +28,7 @@ export default function InputSampah() {
 
             {/* Berat */}
             <div className="mb-5">
-              <label className="block text-[20px] mb-2">
-                Berat (KG)
-              </label>
+              <label className="block text-[20px] mb-2">Berat (KG)</label>
 
               <input
                 type="text"
@@ -55,9 +39,7 @@ export default function InputSampah() {
 
             {/* Tanggal */}
             <div className="mb-5">
-              <label className="block text-[20px] mb-2">
-                Tanggal
-              </label>
+              <label className="block text-[20px] mb-2">Tanggal</label>
 
               <input
                 type="date"
@@ -85,13 +67,11 @@ export default function InputSampah() {
 
           {/* GUIDE CARD */}
           <div className="bg-[#e8ebe6] border border-gray-400 rounded-[20px] p-6 w-full lg:w-[430px]">
-
             <h2 className="text-[24px] font-medium underline mb-6 text-center">
               Panduan Pemilahan
             </h2>
 
             <div className="flex flex-col gap-5">
-
               {/* ORGANIK */}
               <div className="bg-white border border-gray-300 rounded-[18px] p-4 flex items-center gap-4">
                 <img
@@ -101,9 +81,7 @@ export default function InputSampah() {
                 />
 
                 <div>
-                  <h3 className="text-[20px] font-semibold">
-                    Sampah Organik
-                  </h3>
+                  <h3 className="text-[20px] font-semibold">Sampah Organik</h3>
 
                   <p className="text-gray-600 text-[14px] leading-relaxed">
                     Sisa makanan, daun, kulit buah, sayuran, dll
@@ -139,9 +117,7 @@ export default function InputSampah() {
                 />
 
                 <div>
-                  <h3 className="text-[20px] font-semibold">
-                    Sampah Kertas
-                  </h3>
+                  <h3 className="text-[20px] font-semibold">Sampah Kertas</h3>
 
                   <p className="text-gray-600 text-[14px] leading-relaxed">
                     Kertas, kardus, koran, buku, berkas, dll
@@ -158,21 +134,17 @@ export default function InputSampah() {
                 />
 
                 <div>
-                  <h3 className="text-[20px] font-semibold">
-                    Lainnya
-                  </h3>
+                  <h3 className="text-[20px] font-semibold">Lainnya</h3>
 
                   <p className="text-gray-600 text-[14px] leading-relaxed">
                     Sampah B3 atau lainnya (tidak termasuk kategori di atas)
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
-      )}
+      </div>
     </div>
   );
 }

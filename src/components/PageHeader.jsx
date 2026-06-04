@@ -1,37 +1,26 @@
-export default function PageHeader({ title, breadcrumb, children, onClick }) {
+import { FaBell, FaSearch } from "react-icons/fa";
+import { FcAreaChart } from "react-icons/fc";
+import { SlSettings } from "react-icons/sl";
+
+export default function PageHeader({ breadcrumb, onClick }) {
   return (
     <div
-      id="pageheader-container"
-      className="flex items-center justify-between p-4"
+      id="header-container"
+      className="flex items-center justify-between h-16 px-8 border-b border-gray-300 bg-gray-50"
     >
-      <div id="pageheader-left" className="flex flex-col">
-        <span id="page-title" className="text-3xl font-semibold">
-          {title}
-        </span>
+      <h1 className="text-2xl font-bold">{breadcrumb}</h1>
 
-        <div
-          id="breadcrumb-links"
-          className="flex items-center font-medium space-x-2 mt-2"
-        >
-          <span id="breadcrumb-home" className="text-gray-500">
-            Beranda
-          </span>
-          <span id="breadcrumb-separator" className="text-gray-500">
-            /
-          </span>
-          <span id="breadcrumb-current" className="text-gray-500">
-            {breadcrumb}
-          </span>
+      <div className="flex items-center gap-3">
+        <div className="text-right">
+          <p className="font-medium">Hello, Manda</p>
+          <p className="text-sm text-gray-500">Warga</p>
         </div>
-      </div>
 
-      <div>
-        <button
-          onClick={onClick}
-          className="bg-hijau text-green-700 px-4 py-2 rounded-lg"
-        >
-          {children}
-        </button>
+        <img
+          src="/img/user.png"
+          alt="Profile"
+          className="w-10 h-10 rounded-full"
+        />
       </div>
     </div>
   );

@@ -6,10 +6,7 @@ export default function Edukasi() {
   return (
     <div>
       <PageHeader
-        title="Edukasi"
         breadcrumb="Edukasi"
-        children="Add Edukasi"
-        onClick={() => setShowContent((prev) => !prev)}
       ></PageHeader>
 
       <div>
